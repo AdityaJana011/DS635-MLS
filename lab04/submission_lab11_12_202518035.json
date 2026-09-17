@@ -1,0 +1,61 @@
+{
+  "roll": "202518035",
+  "name": "Aditya Jana",
+  "env": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "torch": "2.14.0+cpu",
+    "safetensors": "0.8.0",
+    "linux": true
+  },
+  "results": {
+    "formats": {
+      "pt": {
+        "file_mb": 251.7,
+        "cold_s": 0.716,
+        "warm_s": 0.334,
+        "cold_read_bytes_mb": 252.2,
+        "load_rss_delta_mb": 240.0,
+        "load_rchar_mb": 251.7
+      },
+      "safetensors": {
+        "file_mb": 251.7,
+        "cold_s": 0.017,
+        "warm_s": 0.0,
+        "cold_read_bytes_mb": 2.7,
+        "load_rss_delta_mb": 0.0,
+        "load_rchar_mb": 0.0,
+        "explicit_read_rchar_mb": 251.7
+      }
+    },
+    "stride": {
+      "transpose_same_ptr": true,
+      "contig_sizes_mb": [
+        16.8,
+        67.1,
+        151.0,
+        268.4
+      ],
+      "contig_times_ms": [
+        34.49,
+        149.35,
+        278.56,
+        436.03
+      ],
+      "safetensors_refused_view": true
+    },
+    "trust": {
+      "payload_fired_default": false,
+      "blocked_by_weights_only": true,
+      "payload_fired_unsafe": true
+    },
+    "gguf_real": {}
+  },
+  "answers": {
+    "warm_faster_than_cold": true,
+    "safetensors_rss_near_zero": true,
+    "contiguous_cost_grows": true,
+    "weights_only_blocked_it": true,
+    "safetensors_still_cannot": "Backdoor/trojan weight poisoning and numerical instability (NaN/inf corruption)"
+  }
+}
