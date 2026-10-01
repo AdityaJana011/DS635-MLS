@@ -1,0 +1,74 @@
+{
+  "roll": "202518035",
+  "name": "Aditya Jana",
+  "env": {
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "python": "3.13.15",
+    "torch": "2.11.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.1.3",
+    "seed": 214463790,
+    "target": "gpt2",
+    "draft": "distilgpt2",
+    "linux": true
+  },
+  "results": {
+    "accept": {
+      "positions": [
+        0,
+        1,
+        2
+      ],
+      "empirical": [
+        0.721,
+        1.0,
+        0.331
+      ],
+      "theoretical": [
+        0.714,
+        1.0,
+        0.333
+      ]
+    },
+    "emit": {
+      "target_p0": [
+        0.5,
+        0.2,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "empirical": [
+        0.499,
+        0.2,
+        0.101,
+        0.1,
+        0.1
+      ],
+      "tv_distance": 0.0014
+    },
+    "broken": {
+      "tv_distance": 0.1198
+    },
+    "vector": {
+      "agreement": 1.0,
+      "n_checks": 3000
+    },
+    "stitch": {
+      "target": "gpt2",
+      "draft": "distilgpt2",
+      "k": 4,
+      "n_tokens": 24,
+      "identical_to_greedy": true,
+      "target_passes": 6,
+      "accept_lengths": [
+        4,
+        1,
+        4,
+        4,
+        4,
+        2
+      ]
+    }
+  }
+}
